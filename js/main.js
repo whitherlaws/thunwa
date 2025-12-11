@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("rotating-text");
-  const texts = ["user testing", "prototyping", "branding", "marketing"]; // Added periods for consistency
+  const texts = ["your website", "user testing", "prototyping", "branding", "marketing"]; // Added periods for consistency
   let index = 0;
 
   // Total cycle time (e.g., 3000ms) = time text is visible + transition time
@@ -46,4 +46,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 
