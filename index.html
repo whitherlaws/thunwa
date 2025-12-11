@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Landing Page - Branding & Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <h1 class="logo"><img src="img/thunwa-black-no-text.png" alt="Thunwa logo">Thunwa Studio</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero video-hero">
+
+        <video autoplay muted loop playsinline id="hero-video">
+            <source src="video/tech.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="container hero-content-overlay">
+            <div class="hero-content">
+                <p class="tagline-intro">Your time is valuable, let us do</p>
+                <h2 id="rotating-text" class="rotating-text">prototyping.</h2>
+                <a href="#services" class="cta-button">See Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Expertise</h2>
+            <p class="section-description">We specialize in transforming ideas into memorable brands and functional,
+                beautiful digital experiences.</p>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <h3>Create Comprehensive Branding</h3>
+                    <p>Develop a strong, cohesive brand identity, including logo design, color palettes, typography, and
+                        brand guidelines that resonate with your target audience.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>WordPress Website Building</h3>
+                    <p>Full-cycle website development using WordPress, ensuring a responsive, fast, and easy-to-manage
+                        platform tailored to your business needs.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Design & Prototyping</h3>
+                    <p>Conceptualize and create high-fidelity prototypes for **websites, applications, mobile games, or
+                        game UI interfaces** to validate user flows before development.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>UX/UI Audits & Testing</h3>
+                    <p>Enhance your existing products with expert user experience (UX) and user interface (UI) design,
+                        including detailed user testing and optimization.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Graphic Design & Marketing Collateral</h3>
+                    <p>Develop compelling visual assets beyond the screen, including brochures, presentations, social
+                        media graphics, print advertising, and essential marketing materials to create a unified
+                        offline and online presence.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Video Editing & Motion Graphics</h3>
+                    <p>Bring your brand to life with dynamic 2D motion graphics, explainer videos, social media
+                        ads, and polished video content. We handle everything from raw footage editing to final export
+                        and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p class="section-description">We'd love to hear about your vision. Get in touch with us today!</p>
+
+            <form action="YOUR_SERVER_ENDPOINT_HERE" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="name@company.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="project_budget">Estimated Budget</label>
+                    <select id="project_budget" name="project_budget" required>
+                        <option value="" disabled selected>Select your budget range</option>
+                        <option value="under_5k">Under $5,000</option>
+                        <option value="5k_10k">$5,000 - $10,000</option>
+                        <option value="10k_20k">$10,000 - $20,000</option>
+                        <option value="over_20k">Over $20,000</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Project Details</label>
+                    <textarea id="message" name="message" rows="7" required
+                        placeholder="Tell us about your project, goals, and target audience."></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">Send Project Inquiry</button>
+            </form>
+
+            <div class="contact-info">
+                <p>Email: <a href="mailto:ritakhemmarin@gmail.com">ritakhemmarin@gmail.com</a></p>
+                <p>Phone: (555) 123-4567</p>
+                <a href="https://www.linkedin.com/in/kheammarinbam/">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg> linkedin.com/in/kheammarinbam
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p class="section-description">Let's build something great together. Reach out through the channels below.
+            </p>
+
+            <div class="contact-methods-grid">
+
+                <a href="mailto:ritakhemmarin@gmail.com" class="contact-link-card">
+                    <span class="icon-label">📧 Email Us</span>
+                    <span class="contact-detail">ritakhemmarin@gmail.com</span>
+                </a>
+                <!-- 
+                <a href="tel:+15551234567" class="contact-link-card">
+                    <span class="icon-label">📞 Give us a Call</span>
+                    <span class="contact-detail">(555) 123-4567</span>
+                </a> -->
+
+                <a href="https://www.linkedin.com/in/kheammarinbam/" target="_blank" class="contact-link-card">
+                    <span class="icon-label">🔗 Connect on LinkedIn</span>
+                    <span class="contact-detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                        Khemmarin Bamrungwonguthai
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BrandForge Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
